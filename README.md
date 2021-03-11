@@ -37,7 +37,7 @@ The purpose of this project is to help the Learning Team to decided wether an ex
 
 ## Cleaning
 Before cleaning the data in JupyterNotebook with Pandas I collected the applicable and nessceary data from the SQL Database
-'''python
+'''python:
 connection_string = 'mysql+pymysql://root:' + password + '@localhost/clz'
 engine = create_engine(connection_string)
 data = pd.read_sql_query('SELECT count(*) AS completion_count, c.course_category, cc.course_id, date_created, c.course_name, c.location FROM course_completion cc
