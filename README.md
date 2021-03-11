@@ -1,7 +1,7 @@
-# Course Selector. An algorithm to a learning course.
-*[Manuel Zimmermann]*
-
-*[Data Analytics, Campus Ironhack & 12. March 2021]*
+# Course Selector. 
+### An algorithm to predict a learning course.
+*Manuel Zimmermann*
+*Data Analytics, Campus Ironhack Berlin & 12. March 2021*
 
 ## Content
 - [Project Description](#project-description)
@@ -10,9 +10,7 @@
 - [Cleaning](#cleaning)
 - [Model Training and Evaluation](#model-training-and-evaluation)
 - [Conclusion](#conclusion)
-- [Future Work](#future-work)
 - [Workflow](#workflow)
-- [Organization](#organization)
 - [Links](#links)
 
 ## Project Description
