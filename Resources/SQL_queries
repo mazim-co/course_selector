@@ -1,0 +1,68 @@
+-- completion: count of each course (order by count descanding)
+SELECT count(*) AS completion_count, c.course_category, cc.course_id, date_created, c.course_name, c.location FROM course_completion cc
+JOIN course c ON c.course_id = cc.course_id
+WHERE Completion_Status IN ('Complete', 'In progress')
+AND c.course_category != 'Archive' AND c.course_category != 'Sandbox'
+GROUP BY Course_id
+ORDER BY completion_count DESC;
+
+
+
+
+
+-- creating a table (to merge later in python) compl_count -- completion: count of each course (order by count descanding)
+DROP TABLE compl_count;
+CREATE TABLE compl_count(
+SELECT count(*) AS completion_count, cc.course_id FROM course_completion cc
+JOIN course c ON c.course_id = cc.course_id
+WHERE Completion_Status IN ('Complete', 'In progress')
+AND c.course_category != 'Archive' AND c.course_category != 'Sandbox'
+GROUP BY Course_id
+ORDER BY completion_count DESC
+);
+
+
+
+-- sitelog: count events
+SELECT count(*) AS counter, event_name FROM sitelogs
+GROUP BY event_name
+ORDER BY counter DESC;
+
+-- sitelog: count actions
+SELECT count(*) AS counter, ACTION FROM sitelogs
+GROUP BY ACTION
+ORDER BY counter DESC;
+
+-- sitelog: count target
+SELECT count(*) AS counter, target FROM sitelogs
+GROUP BY target
+ORDER BY counter DESC;
+
+
+-- sitelog: event count for course 
+SELECT count(*) AS count_log, sl.course_id, c.course_name FROM sitelogs sl
+JOIN course c ON c.course_id = sl.course_id
+GROUP BY Course_id
+ORDER BY count_log DESC;
+
+-- user: count users by status
+SELECT count(*) AS counter, user_status FROM USER
+GROUP BY user_status
+ORDER BY counter DESC;
+
+
+-- user: count (active) users by language
+SELECT count(*) AS counter, preferred_language FROM USER
+WHERE user_status = 'Active'
+GROUP BY preferred_language
+ORDER BY counter DESC;
+
+
+-- user: count (active) users by city
+SELECT count(*) AS counter, city FROM USER
+WHERE user_status = 'Active'
+GROUP BY city
+ORDER BY counter DESC;
+
+
+
