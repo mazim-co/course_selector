@@ -18,7 +18,7 @@
 
 ## Project Description
 Over 900 learning course needs to be reviewed and migrated to a new Software. The workforce is low and the level of effort is high.
-The purpose of this project is to help the Learning Team to decided wether an exiting course is worth to recolate in a new Learning Record Store.
+The purpose of this project is to help the Learning Team to decided wether an exiting course is worth to recolate in a new Learning Record Store or not.
 
 ## Hypotheses / Questions
 * Can we reduce the amount of excisting courses that needs to be relocation?
@@ -36,16 +36,43 @@ The purpose of this project is to help the Learning Team to decided wether an ex
   * 3NF (Third Normal Form)
 
 ## Cleaning
-Before cleaning the data in JupyterNotebook with Pandas I collected the applicable and nessceary data from the SQL Database
-'''python:
+Before cleaning the data in JupyterNotebook with Pandas I collected the applicable and nessceary data from the SQL Database.
+```python:
 connection_string = 'mysql+pymysql://root:' + password + '@localhost/clz'
 engine = create_engine(connection_string)
-data = pd.read_sql_query('SELECT count(*) AS completion_count, c.course_category, cc.course_id, date_created, c.course_name, c.location FROM course_completion cc
-JOIN course c ON c.course_id = cc.course_id
-WHERE Completion_Status IN ('Complete', 'In progress')
-AND c.course_category != 'Archive' AND c.course_category != 'Sandbox'
-GROUP BY Course_id;', engine)
-'''
+data = pd.read_sql_query('SELECT 
+                         count(*) AS completion_count, c.course_category, cc.course_id, date_created, c.course_name, c.location 
+                         FROM course_completion cc
+                         JOIN course c ON c.course_id = cc.course_id
+                         WHERE Completion_Status IN ('Complete', 'In progress')
+                         AND c.course_category != 'Archive' AND c.course_category != 'Sandbox'
+                         GROUP BY Course_id;', engine
+                        )
+```
+```SQL:
+'SELECT 
+                         count(*) AS completion_count, c.course_category, cc.course_id, date_created, c.course_name, c.location 
+                         FROM course_completion cc
+                         JOIN course c ON c.course_id = cc.course_id
+                         WHERE Completion_Status IN ('Complete', 'In progress')
+                         AND c.course_category != 'Archive' AND c.course_category != 'Sandbox'
+                         GROUP BY Course_id;', engine
+                        )
+                        ```
+
+* **Cleaning Porcess:**
+    * Header Standardization
+        * Snake Casing for header standardization due to its simplicity. Snake Casing is a convention which replaces spaces with underscores and converts any upper-case letters to lower-case.
+    * Dtypes
+        * Assigning the right data types to the features.
+    * Checking for and removing NaN Value
+        * At this point I checked for the percentage of null values per column. As we only found a small number of them we decided to drop those rows.
+
+Alternatively we could also replace them with the mean value, but percentages are so low that it is not necessary.
+After dropping 24 rows we have now 17976 observations left.
+We also decided to drop the rows with the index 38 and 101. This is done because they uniquely represent the household_size 8 and 9 respectively.
+        
+
 ## Analysis
 * Overview the general steps you went through to analyze your data in order to test your hypothesis.
 * Document each step of your data exploration and analysis.
