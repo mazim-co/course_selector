@@ -17,7 +17,7 @@ Over 900 learning course needs to be reviewed and migrated to a new Software. Th
 The purpose of this project is to help the Learning Team to decided wether an exiting course is worth to recolate in a new Learning Record Store or not.
 
 ## Hypotheses / Questions
-Can we reduce the amount of excisting courses that needs to be relocation?
+Can we reduce the amount of excisting courses that needs to be relocated?
 * $H_0$: Completion rate of a learning coure has no affect of the relocation activity.
 * $H_1$: Completion rate has an affect.
 
@@ -137,6 +137,6 @@ Gathering Data • Building SQL Database • Feature Selection • Cleaning • 
 
 
 ## Links
-[Repository](https://github.com/mazin-co/course_selctor)  
+[Repository](https://github.com/mazin-co/course_selector)  
 [Presentaion](https://www.canva.com/design/DAEYZswuxiM/1bNHhdMZoVRu-KPAAxdD1A/view?utm_campaign=designshare&utm_source=sharebutton)  
   
