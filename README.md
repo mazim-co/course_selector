@@ -9,9 +9,7 @@
 - [Cleaning](#cleaning)
 - [Model Training and Evaluation](#model-training-and-evaluation)
 - [Conclusion](#conclusion)
-- [Future Work](#future-work)
 - [Workflow](#workflow)
-- [Organization](#organization)
 - [Links](#links)
 
 ## Project Description
