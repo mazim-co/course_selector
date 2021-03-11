@@ -128,18 +128,18 @@ weighted avg       0.84      0.84      0.84        38
 * With the optimal parameters for the RandomForrest Classifier I get an accuracy of 84%. In short, 8 of 10 are correct predicted.
 * Best paramters:
 ```python
- {'criterion': 'gini', 'max_depth': 9, 'max_leaf_nodes': 9, 'min_samples_split': 3, 'n_estimators': 9}
+    criterion = 'entropy', 
+    max_depth = 12, 
+    max_leaf_nodes = 4, 
+    min_samples_split = 2,
+    n_estimators = 69
 ```
 
 ## Workflow
-Outline the workflow you used in your project. What were the steps?
-How did you test the accuracy of your analysis and/or machine learning algorithm?
+Gathering Data • Building SQL Database • Feature Selection • Cleaning • Scaling • Train&Test • HyperTuning • Applying Model • Visualization
 
 
 ## Links
-Include links to your repository, slides and trello/kanban board. Feel free to include any other links associated with your project.
-
-
-[Repository](https://github.com/)  
-[Slides](https://slides.com/)  
-[Trello](https://trello.com/en)  
+[Repository](https://github.com/mazin-co/course_selctor)  
+[Presentaion](https://www.canva.com/design/DAEYZswuxiM/1bNHhdMZoVRu-KPAAxdD1A/view?utm_campaign=designshare&utm_source=sharebutton)  
+  
