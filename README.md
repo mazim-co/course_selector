@@ -1,6 +1,7 @@
-# Course Selector. 
-### An algorithm to predict a learning course.
-*Manuel Zimmermann* | *Data Analytics, Campus Ironhack Berlin - 12. March 2021*
+# Course Selector. An algorithm to a learning course.
+*[Manuel Zimmermann]*
+
+*[Data Analytics, Campus Ironhack & 12. March 2021]*
 
 ## Content
 - [Project Description](#project-description)
@@ -9,7 +10,9 @@
 - [Cleaning](#cleaning)
 - [Model Training and Evaluation](#model-training-and-evaluation)
 - [Conclusion](#conclusion)
+- [Future Work](#future-work)
 - [Workflow](#workflow)
+- [Organization](#organization)
 - [Links](#links)
 
 ## Project Description
@@ -17,9 +20,9 @@ Over 900 learning course needs to be reviewed and migrated to a new Software. Th
 The purpose of this project is to help the Learning Team to decided wether an exiting course is worth to recolate in a new Learning Record Store or not.
 
 ## Hypotheses / Questions
-* Can we reduce the amount of excisting courses that needs to be relocation?
-* H null = Completion rate of a learning coure has no affect of the relocation activity.
-* H alternative = Completion rate has an affect.
+Can we reduce the amount of excisting courses that needs to be relocation?
+* $H_0$: Completion rate of a learning coure has no affect of the relocation activity.
+* $H_1$: Completion rate has an affect.
 
 ## Dataset
 * The dataset is build on multiple reports from the exicting software:
