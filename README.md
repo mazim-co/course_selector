@@ -18,8 +18,8 @@ The purpose of this project is to help the Learning Team to decided wether an ex
 
 ## Hypotheses / Questions
 Can we reduce the amount of excisting courses that needs to be relocation?
-$H_0$: Completion rate of a learning coure has no affect of the relocation activity.
-$H_1$: Completion rate has an affect.
+* $H_0$: Completion rate of a learning coure has no affect of the relocation activity.
+* $H_1$: Completion rate has an affect.
 
 ## Dataset
 * The dataset is build on multiple reports from the exicting software:
