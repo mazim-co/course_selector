@@ -1,5 +1,5 @@
 # Course Selector. 
-### An algorithm to predict a learning course recommendation.
+### An algorithm to predict a recommendation for a learning course.
 *Manuel Zimmermann* | *Data Analytics, Campus Ironhack Berlin - 12. March 2021*
 
 ## Content
