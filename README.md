@@ -17,7 +17,7 @@ Over 900 learning course needs to be reviewed and migrated to a new Software. Th
 The purpose of this project is to help the Learning Team to decided wether an exiting course is worth to recolate in a new Learning Record Store or not.
 
 ## Hypotheses / Questions
-Can we reduce the amount of excisting courses that needs to be relocated?
+Can an machine leanring algorithm decide if learning course is worth to keep and reduce the amount of courses that needs to be relocated?
 * $H_0$: Completion rate of a learning coure has no affect of the relocation activity.
 * $H_1$: Completion rate has an affect.
 
