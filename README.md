@@ -137,6 +137,6 @@ Gathering Data • Building SQL Database • Feature Selection • Cleaning • 
 
 
 ## Links
-[Repository](https://github.com/mazin-co/course_selector)  
+[Repository](https://github.com/mazim-co/course_selector)  
 [Presentaion](https://www.canva.com/design/DAEYZswuxiM/1bNHhdMZoVRu-KPAAxdD1A/view?utm_campaign=designshare&utm_source=sharebutton)  
   
