@@ -65,10 +65,11 @@ data = pd.read_sql_query('SELECT
 
 
 ## Model Training and Evaluation
-* **Scaling Numericals**
-    * I opted to use a sklearn `StandardScaler` due to the distribution shape being non-normal. It ensures that our variables are scaled to values within -4 and 12.
 * **Encoding Categoricals**
     * Categorical features `course_type` & `course_category` were encoded with pandas `.astype('category')`and `.cat.codes`
+
+* **Scaling Numericals**
+    * I opted to use a sklearn `StandardScaler` due to the distribution shape being non-normal. It ensures that our variables are scaled to values within -4 and 12.
 
 * **Cross Validation**
     * I used the Hyperparameter tuning `from sklearn.model_selection import GridSearchCV` in order to determine the optimal values for a given model.
