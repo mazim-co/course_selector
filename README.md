@@ -32,7 +32,7 @@ Can we reduce the amount of excisting courses that needs to be relocated?
   * 3NF (Third Normal Form)
 
 ## Cleaning
-Before cleaning the data in JupyterNotebook with pandas, I collected and prepeared the nessceary data from the SQL Database.
+Before cleaning the data in JupyterNotebook with pandas, I collected and prepeared the nessceary data from the SQL Database that I created.
 ```python
 connection_string = 'mysql+pymysql://root:' + password + '@localhost/clz'
 engine = create_engine(connection_string)
