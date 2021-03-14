@@ -13,8 +13,7 @@
 - [Links](#links)
 
 ## Project Description
-Over 900 learning course needs to be reviewed and migrated to a new Software. The workforce is low and the level of effort is high.
-The purpose of this project is to help the Learning Team to decided wether an exiting course is worth to recolate in a new Learning Record Store or not.
+Over 900 learning course needs to be reviewed and migrated to a new software. The workforce is low and the level of effort is high. The purpose of this project is to help the Learning Team to decided wether an exiting course is worth to relocate in a new Learning Record Store or not.
 
 ## Hypotheses / Questions
 Can a machine leanring algorithm decide if learning course is worth to keep and reduce the amount of courses that needs to be relocated?
@@ -32,7 +31,7 @@ Can a machine leanring algorithm decide if learning course is worth to keep and 
   * 3NF (Third Normal Form)
 
 ## Cleaning
-Before cleaning the data in JupyterNotebook with pandas, I collected and prepeared the nessceary data from the SQL Database that I created.
+Before cleaning the data in Jupyter Notebook with pandas, I collected and prepeared the nessceary data from the SQL Database that I created.
 ```python
 connection_string = 'mysql+pymysql://root:' + password + '@localhost/clz'
 engine = create_engine(connection_string)
@@ -123,7 +122,7 @@ weighted avg       0.84      0.84      0.84        38
 
 ```
 ## Conclusion
-* With the optimal parameters for the RandomForrest Classifier I get an accuracy of 84%. In short, 8 of 10 are correct predicted.
+* With the optimal parameters for the `RandomForestClassifier` I get an accuracy of 0.84 = 84%. In short, 8 of 10 are correct predicted.
 * Best paramters:
 ```python
     criterion = 'entropy', 
