@@ -13,12 +13,13 @@
 - [Links](#links)
 
 ## Project Description
-Over 900 learning course needs to be reviewed and migrated to a new software. The workforce is low and the level of effort is high. The purpose of this project is to help the Learning Team to decided wether an exiting course is worth to relocate in a new Learning Record Store or not.
+Over 900 learning course needs to be reviewed and migrated to a new software. The workforce is low and the level of effort is high. The purpose of this project is to help the Learning Team to decided wheter an exiting course is worth to relocate in a new Learning Record Store or not.
 
 ## Hypotheses / Questions
 Can a machine leanring algorithm decide if learning course is worth to keep and reduce the amount of courses that needs to be relocated?
-* $H_0$: Completion rate of a learning coure has no affect of the relocation activity.
-* $H_1$: Completion rate has an affect.
+* $H_0$: The algortihm can decide to an accuracy of 80 percent if a course will retain or not.
+* $H_1$: The algortihm cannot decide to retain a course.
+* Alpha Level: 0.05 percent
 
 ## Dataset
 * The dataset is build on multiple reports from the exicting software:
@@ -28,7 +29,7 @@ Can a machine leanring algorithm decide if learning course is worth to keep and 
   * User.csv ~6391
   * site_log.csv ~385.682
 * To manage the the reports a SQL Database was developed with multiple table
-  * 3NF (Third Normal Form)
+  * [3NF (Third Normal Form)](https://en.wikipedia.org/wiki/Third_normal_form#:~:text=Third%20normal%20form%20(3NF)%20is,in%201971%20by%20Edgar%20F.)
 
 ## Cleaning
 Before cleaning the data in Jupyter Notebook with pandas, I collected and prepeared the nessceary data from the SQL Database that I created.
@@ -45,7 +46,7 @@ data = pd.read_sql_query('SELECT
                         )
 ```
 
-* **Cleaning Porcess**
+* **Cleaning Porcess** (Python (Numpy & Pandas))
     1. *Header Standardization:*
         * Snake Casing for header standardization due to its simplicity. Snake Casing is a convention which replaces spaces with underscores and converts any upper-case letters to lower-case.
     2. *Dtypes*
@@ -59,7 +60,7 @@ data = pd.read_sql_query('SELECT
             * `tags` ~35%
         * Mostly NaNs are filled with 'Unkown' or 0.
     4. *Column Split*
-        * Feature 'content' & 'tags' contains multiple strings. Both columns are encoded with pd.get_dummies
+        * Feature 'content' & 'tags' contains multiple strings. Both columns are encoded with `pd.get_dummies`
         
 
 
