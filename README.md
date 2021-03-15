@@ -16,7 +16,7 @@
 Over 900 learning course needs to be reviewed and migrated to a new software. The workforce is low and the level of effort is high. The purpose of this project is to help the Learning Team to decided wheter an exiting course is worth to relocate in a new Learning Record Store or not.
 
 ## Hypotheses / Questions
-Can a machine leanring algorithm decide if learning course is worth to keep and reduce the amount of courses that needs to be relocated?
+Can a machine learning algorithm decide if learning course is worth to keep and reduce the amount of courses that needs to be relocated?
 * $H_0$: The algortihm can decide to an accuracy of 80 percent if a course will retain or not.
 * $H_1$: The algortihm cannot decide to retain a course.
 * Alpha Level: 0.05 percent
